@@ -11,9 +11,21 @@ CLASSIFY_TOOL = {
     "input_schema": {
         "type": "object",
         "properties": {
-            "category": {"type": "string", "enum": ["billing", "technical", "account", "feature-request", "other"]},
-            "urgency": {"type": "string", "enum": ["low", "medium", "high"]},
-            "sentiment": {"type": "string", "enum": ["positive", "neutral", "negative"]}
+            "category": {
+                "type": "string",
+                "enum": ["billing", "technical", "account", "feature-request", "other"],
+                "description": "billing = Rechnungen/Zahlungen. technical = Bugs, Abstürze, Fehlverhalten der App (nicht login-bezogen). account = Login, Passwort, Zugangsdaten, Konto-Einstellungen — unabhängig davon ob die Ursache ein Update oder ein kaputter Link ist. feature-request = Wünsche für neue Funktionen. other = alles andere."
+            },
+            "urgency": {
+                "type": "string",
+                "enum": ["low", "medium", "high"],
+                "description": "high = explizite Dringlichkeit/Deadline genannt, oder Totalausfall ohne Workaround. medium = störendes Problem, aber kein genannter Zeitdruck. low = Fragen, Wünsche, kein akutes Problem."
+            },
+            "sentiment": {
+                "type": "string",
+                "enum": ["positive", "neutral", "negative"],
+                "description": "positive = Lob/Dank. neutral = sachlicher Bericht ohne emotionale Sprache, auch wenn ein Problem beschrieben wird. negative = explizite Frustration/Ärger in der Formulierung."
+            }
         },
         "required": ["category", "urgency", "sentiment"]
     }
