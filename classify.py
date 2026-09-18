@@ -19,7 +19,7 @@ CLASSIFY_TOOL = {
             "urgency": {
                 "type": "string",
                 "enum": ["low", "medium", "high"],
-                "description": "high = explizite Dringlichkeit/Deadline genannt, oder Totalausfall ohne Workaround. medium = störendes Problem, aber kein genannter Zeitdruck. low = Fragen, Wünsche, kein akutes Problem."
+                "description": "high = NUR wenn mindestens eines zutrifft: (1) eine explizite Zeitangabe oder Frist wird genannt (Uhrzeit, 'heute', 'in X Minuten/Stunden'), oder (2) eine Kernfunktion ist komplett unbenutzbar ohne Workaround. medium = ein reales Problem, aber ohne genannte Frist und ohne kompletten Funktionsausfall. low = Frage, Wunsch oder kein akutes Problem. Wichtig: Der emotionale Tonfall (Frustration, Ärger, Wortwahl wie 'ärgerlich' oder 'nervt') hat KEINEN Einfluss auf diese Einstufung — nur Zeitdruck oder Funktionsausfall zählen."
             },
             "sentiment": {
                 "type": "string",
