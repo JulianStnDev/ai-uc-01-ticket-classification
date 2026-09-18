@@ -21,7 +21,7 @@ CLASSIFY_TOOL = {
 
 def classify(ticket_text):
     response = client.messages.create(
-        model="claude-sonnet-5",
+        model="claude-haiku-4-5-20251001",
         max_tokens=200,
         tools=[CLASSIFY_TOOL],
         tool_choice={"type": "tool", "name": "classify_ticket"},
