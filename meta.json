@@ -1,6 +1,6 @@
 {
-  "title": "",
+  "title": "Ticket-Klassifikation (Structured Output)",
   "status": "planned",
-  "tags": [],
-  "summary": ""
+  "tags": ["structured-output", "classification"],
+  "summary": "Freitext-Support-Tickets zu strukturiertem JSON klassifizieren"
 }
