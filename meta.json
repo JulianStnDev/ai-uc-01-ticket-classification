@@ -1,6 +1,13 @@
 {
-  "title": "Ticket-Klassifikation (Structured Output)",
+  "title": "Ticket Classification (Structured Output)",
   "status": "done",
-  "tags": ["structured-output", "classification"],
-  "summary": "Freitext-Support-Tickets zu strukturiertem JSON klassifizieren"
+  "tags": [
+    "structured-output",
+    "classification"
+  ],
+  "summary": "Turning free-text support tickets into validated JSON by giving every enum value an explicit condition in the tool schema.",
+  "metrics": [
+    "$1.37 per 1000 requests",
+    "p95 latency 0.96s (indicative, n=6)"
+  ]
 }
